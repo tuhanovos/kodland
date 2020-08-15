@@ -82,7 +82,12 @@ WSGI_APPLICATION = 'kodland.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd7jni0mj2n9i2b',
+        'USER': 'necyzeqdrbylgi',
+        'PASSWORD': '5df38309d2191854a5af9b42228b0d68e9514eb607de7289a00b065672285545',
+        'HOST': 'ec2-54-243-67-199.compute-1.amazonaws.com',
+        'PORT': 5432,
     }
 }
 
