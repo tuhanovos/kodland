@@ -1,0 +1,27 @@
+@import url(/static/css/fonts/CirceRounded-Regular/style.css?e793e001a00e);
+/* line 9, static/css/style.scss */
+.header {
+  height: 80px;
+  font-family: Circe Rounded, sans-serif; }
+  /* line 13, static/css/style.scss */
+  .header__logo {
+    width: 189.26px;
+    height: 72px; }
+  /* line 18, static/css/style.scss */
+  .header__link {
+    font-size: 22px;
+    color: #010101; }
+  /* line 24, static/css/style.scss */
+  .header__add_button {
+    background-color: #315AF2;
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 19px; }
+  /* line 32, static/css/style.scss */
+  .header__add_button:hover {
+    color: #fff; }
+
+/* line 38, static/css/style.scss */
+.line_separator {
+  border: 2px solid #CDCDCD; }

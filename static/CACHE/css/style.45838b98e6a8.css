@@ -1,0 +1,12 @@
+@import url(/static/css/fonts/CirceRounded-Regular/style.css?e793e001a00e);
+/* line 5, static/css/style.scss */
+.header {
+  height: 80px; }
+  /* line 7, static/css/style.scss */
+  .header__logo {
+    width: 189.26px;
+    height: 72px; }
+  /* line 11, static/css/style.scss */
+  .header__link {
+    font-family: Circe Rounded, sans-serif;
+    color: black; }

@@ -1,0 +1,51 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block banner %}
+    {% if object_list %}
+        <div class="container-fluid banner">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-7">
+                        <ul class="list-group list-group-flush mt-3 ml-2 banner__text-block">
+                            <li class="list-group-item">NEW</li>
+                            <li class="list-group-item">{{ object_list.first.title }}</li>
+                            <li class="list-group-item">{% autoescape off %}
+                                {{ object_list.first.content|truncatewords:35 }}{% endautoescape %}</li>
+                            <li class="list-group-item"><a href="{% url 'blog:article-detail' object_list.first.slug %}"
+                                                           class="btn banner__button">Читать</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-5 align-self-center"><img src="{% get_media_prefix %}{{ object_list.first.image }}"
+                                                              alt="Баннер"
+                                                              class="banner__image"></div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+{% block content %}
+    <div class="container mt-3 article-list ">
+        <h1>Другие статьи</h1>
+        <div class="row">
+            {% for article in object_list|slice:'1:' %}
+                <div class="col-4">
+                    <a href="{% url 'blog:article-detail' article.slug %}">
+                        <div class="card" style="width: 18rem;">
+                            <p class="pt-3 pl-3 pr-3 text-dark small">{{ article.pub_date }}</p>
+                            <img src="{% get_media_prefix %}{{ article.image }}" class="card-img-top img-preview"
+                                 alt="{{ article.title }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ article.title }}</h5>
+
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

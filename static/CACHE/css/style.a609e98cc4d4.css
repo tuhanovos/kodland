@@ -1,0 +1,113 @@
+@import url(/static/css/fonts/CirceRounded-Regular/style.css?e793e001a00e);
+@font-face {
+  font-family: "Museo Cyrl";
+  src: local("Museo Cyrl"), url("/static/css/fonts/Museo_Cyrillic/MuseoCyrl-500.woff?712f0fe02939") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 17, static/css/style.scss */
+body {
+  font-family: Circe Rounded, sans-serif; }
+
+/* line 21, static/css/style.scss */
+h1 {
+  font-family: Museo Cyrl;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 128%;
+  letter-spacing: -0.416667px;
+  color: #315AF2; }
+
+/* line 30, static/css/style.scss */
+.header {
+  height: 80px;
+  border-bottom: 2px solid #CDCDCD; }
+  /* line 34, static/css/style.scss */
+  .header__logo {
+    width: 189.26px;
+    height: 72px; }
+  /* line 39, static/css/style.scss */
+  .header__link {
+    font-size: 22px;
+    color: #010101; }
+  /* line 45, static/css/style.scss */
+  .header__add-button {
+    background-color: #315AF2;
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 19px; }
+  /* line 53, static/css/style.scss */
+  .header__add-button:hover {
+    color: #fff; }
+
+/* line 59, static/css/style.scss */
+.line_separator {
+  border: 2px solid #CDCDCD; }
+
+/* line 63, static/css/style.scss */
+.banner {
+  border-bottom: 2px solid #CDCDCD; }
+  /* line 66, static/css/style.scss */
+  .banner__image {
+    height: 380px;
+    margin-right: 180px;
+    margin-top: 50px; }
+  /* line 73, static/css/style.scss */
+  .banner__text-block li {
+    border: 0; }
+  /* line 77, static/css/style.scss */
+  .banner__text-block li:first-child {
+    font-size: 16px;
+    line-height: 20px;
+    color: #E9399C;
+    letter-spacing: -0.416667px; }
+  /* line 84, static/css/style.scss */
+  .banner__text-block li:nth-child(2) {
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 128%;
+    letter-spacing: -0.416667px;
+    color: #315AF2; }
+  /* line 95, static/css/style.scss */
+  .banner__button {
+    font-family: Museo Cyrl;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.416667px;
+    background-color: #315AF2;
+    color: #fff; }
+  /* line 105, static/css/style.scss */
+  .banner__button:hover {
+    color: #fff; }
+
+/* line 111, static/css/style.scss */
+.article {
+  font-size: 17px;
+  line-height: 128%;
+  color: #404040; }
+  /* line 116, static/css/style.scss */
+  .article img {
+    margin: -20px auto -50px; }
+
+/* line 122, static/css/style.scss */
+.article-add input[type="submit"] {
+  width: 159px;
+  height: 48px;
+  background: #E9399C;
+  border-radius: 3px;
+  font-family: Museo Cyrl;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: 0; }
+
+/* line 134, static/css/style.scss */
+.article-add input[name="title"] {
+  height: 48px;
+  background: #FFFFFF;
+  border: 2px solid #CDCDCD;
+  border-radius: 3px; }

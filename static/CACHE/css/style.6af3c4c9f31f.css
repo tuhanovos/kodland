@@ -1,0 +1,76 @@
+@import url(/static/css/fonts/CirceRounded-Regular/style.css?e793e001a00e);
+@font-face {
+  font-family: "Museo Cyrl";
+  src: local("Museo Cyrl"), url("/static/css/fonts/Museo_Cyrillic/MuseoCyrl-500.woff?712f0fe02939") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 16, static/css/style.scss */
+body {
+  font-family: Circe Rounded, sans-serif; }
+
+/* line 20, static/css/style.scss */
+.header {
+  height: 80px;
+  border-bottom: 2px solid #CDCDCD; }
+  /* line 24, static/css/style.scss */
+  .header__logo {
+    width: 189.26px;
+    height: 72px; }
+  /* line 29, static/css/style.scss */
+  .header__link {
+    font-size: 22px;
+    color: #010101; }
+  /* line 35, static/css/style.scss */
+  .header__add-button {
+    background-color: #315AF2;
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 19px; }
+  /* line 43, static/css/style.scss */
+  .header__add-button:hover {
+    color: #fff; }
+
+/* line 49, static/css/style.scss */
+.line_separator {
+  border: 2px solid #CDCDCD; }
+
+/* line 53, static/css/style.scss */
+.banner {
+  border-bottom: 2px solid #CDCDCD; }
+  /* line 56, static/css/style.scss */
+  .banner__image {
+    width: 464px;
+    height: 422px;
+    margin-right: 180px; }
+  /* line 63, static/css/style.scss */
+  .banner__text-block li {
+    border: 0; }
+  /* line 67, static/css/style.scss */
+  .banner__text-block li:first-child {
+    font-size: 16px;
+    line-height: 20px;
+    color: #E9399C;
+    letter-spacing: -0.416667px; }
+  /* line 74, static/css/style.scss */
+  .banner__text-block li:nth-child(2) {
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 128%;
+    letter-spacing: -0.416667px;
+    color: #315AF2; }
+  /* line 84, static/css/style.scss */
+  .banner__button {
+    font-family: Museo Cyrl;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.416667px;
+    background-color: #315AF2;
+    color: #fff; }
+  /* line 93, static/css/style.scss */
+  .banner__button:hover {
+    color: #fff; }

@@ -1,0 +1,31 @@
+{% load bootstrap4 %}
+{% load static %}
+{% load compress %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    {% compress css %}
+    <link type="text/x-scss" href="{% static 'css/style.scss' %}" rel="stylesheet" media="screen">
+    {% endcompress %}
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-2"><img src="{% static 'images/logo.png' %}" alt="Логотип" class="header__logo"></div>
+            <div class="col-2 align-self-center p-0"><a href="/" class="header__link nav-link mt-2">Блог</a></div>
+            <div class="col-8 align-self-center text-right"><a href="{% url 'blog:article-add' %}" class="header__add-button btn">+ Добавить статью</a></div>
+        </div>
+
+</div>
+</div>
+{% block banner %}{% endblock %}
+{% block content %}{% endblock %}
+</body>
+</html>

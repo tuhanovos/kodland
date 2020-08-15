@@ -1,0 +1,193 @@
+@import "fonts/CirceRounded-Regular/style.css";
+
+@font-face {
+  font-family: "Museo Cyrl";
+  src: local("Museo Cyrl"),
+  url("fonts/Museo_Cyrillic/MuseoCyrl-500.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$header_height: 80px;
+$font_circle_rounded: Circe Rounded, sans-serif;
+$background_color: #315AF2;
+$block_text: #fff;
+$border: 2px solid #CDCDCD;
+
+body {
+  font-family: $font_circle_rounded;
+}
+
+h1 {
+  font-family: Museo Cyrl;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 128%;
+  letter-spacing: -0.416667px;
+  color: #315AF2;
+}
+
+.header {
+  height: $header_height;
+  border-bottom: $border;
+
+  &__logo {
+    width: 189.26px;
+    height: $header_height - 8px;
+  }
+
+  &__link {
+    font-size: 22px;
+    color: #010101;
+
+  }
+
+  &__add-button {
+    background-color: $background_color;
+    color: $block_text;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__add-button:hover {
+    color: $block_text;
+  }
+
+}
+
+.line_separator {
+  border: $border;
+}
+
+.banner {
+  border-bottom: $border;
+
+  &__image {
+    min-height: 50%;
+    margin-right: 180px;
+    margin-top: 50px;
+    width: inherit;
+  }
+
+  &__text-block {
+    li {
+      border: 0;
+    }
+
+    li:first-child {
+      font-size: 16px;
+      line-height: 20px;
+      color: #E9399C;
+      letter-spacing: -0.416667px;
+    }
+
+    li:nth-child(2) {
+      font-family: Museo Cyrl;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 128%;
+      letter-spacing: -0.416667px;
+      color: $background_color;
+    }
+  }
+
+  &__button {
+    font-family: Museo Cyrl;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.416667px;
+    background-color: $background_color;
+    color: $block_text;
+  }
+
+  &__button:hover {
+    color: $block_text;
+  }
+
+}
+
+.article {
+  font-size: 17px;
+  line-height: 128%;
+  color: #404040;
+}
+
+.article-add {
+  input[type="submit"] {
+    width: 159px;
+    height: 40px;
+    background: #E9399C;
+    border-radius: 3px;
+    font-family: Museo Cyrl;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: 0;
+  }
+
+  input[name="title"] {
+    height: 40px;
+    width: inherit;
+    padding: 10px;
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    border-radius: 3px;
+  }
+
+  input[name="image"]{
+    width: inherit;
+    display: none;
+  }
+  input[type='file'] {
+    opacity:1;
+  }
+  label[for="image"]{
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: $background_color;
+  }
+  &__load-image{
+    border: $border;
+    width: inherit;
+    padding: 15px;
+  }
+  #button{
+    width: 155px;
+    background: $background_color;
+    border-radius: 3px;
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 8px;
+    color: $block_text;
+    border: 0;
+  }
+}
+
+.article-list {
+  h5{
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: -0.416667px;
+    color: $background_color;
+  }
+
+  img{
+    background-size: cover;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+
+}
+
+.django-ckeditor-widget {
+  width: inherit;
+}
