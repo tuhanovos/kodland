@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'bootstrap4',
-    # 'bootstrap4_datetime',
+    'bootstrap4',
+    'bootstrap4_datetime',
     'ckeditor',
     'ckeditor_filer',
     'ckeditor_uploader',
@@ -76,10 +76,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'kodland.wsgi.application'
-<<<<<<< HEAD
-
-=======
->>>>>>> 683bffe93978444805ce73feed558ac564417101
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
