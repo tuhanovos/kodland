@@ -83,9 +83,11 @@ WSGI_APPLICATION = 'kodland.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test_blog',
-        'USER': 'blog_admin',
+        'NAME': 'blog',
+        'USER': 'admin',
         'PASSWORD': '0308198O',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 
@@ -111,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_FINDERS = ['compressor.finders.CompressorFinder', ]
 STATICFILES_DIRS = [
     (os.path.join(BASE_DIR, 'static'),)
