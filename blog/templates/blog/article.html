@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col">
                     <h1>{{ object.title }}</h1>
-                    <p>Опубликована: {{ object.pub_date|date }}</p>
+                    <p>Опубликована: {{ object.pub_date }}</p>
                     <p class="text-center"><img src="{% get_media_prefix %}{{ object.image }}" alt="{{ object.title }}" class="img-fluid w-75"></p>
                     <p>{% autoescape off %}{{ object.content }}{% endautoescape %}</p>
                 </div>
