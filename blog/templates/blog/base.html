@@ -1,6 +1,5 @@
 {% load bootstrap4 %}
 {% load static %}
-{% load compress %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% bootstrap_css %}
     {% bootstrap_javascript jquery='full' %}
-    {% compress css %}
-    <link type="text/x-scss" href="{% static 'css/style.scss' %}" rel="stylesheet" media="screen">
-    {% endcompress %}
+    <link type="text/css" href="{% static 'css/style.css' %}" rel="stylesheet" media="screen">
     <title>Title</title>
 </head>
 <body>

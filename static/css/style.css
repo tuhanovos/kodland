@@ -8,14 +8,10 @@
   font-style: normal;
 }
 
-$header_height: 80px;
-$font_circle_rounded: Circe Rounded, sans-serif;
-$background_color: #315AF2;
-$block_text: #fff;
-$border: 2px solid #CDCDCD;
+
 
 body {
-  font-family: $font_circle_rounded;
+  font-family: Circe Rounded, sans-serif;
 }
 
 h1 {
@@ -28,86 +24,87 @@ h1 {
 }
 
 .header {
-  height: $header_height;
-  border-bottom: $border;
+  height: 80px;
+  border-bottom: 2px solid #CDCDCD;
+}
 
-  &__logo {
+  .header__logo {
     width: 189.26px;
-    height: $header_height - 8px;
+    height: 72px;
   }
 
-  &__link {
+  .header__link {
     font-size: 22px;
     color: #010101;
 
   }
 
-  &__add-button {
-    background-color: $background_color;
-    color: $block_text;
+  .header__add-button {
+    background-color: #315AF2;
+    color: #fff;
     padding: 6px 16px;
     font-size: 16px;
     line-height: 19px;
   }
 
-  &__add-button:hover {
-    color: $block_text;
+  .header__add-button:hover {
+    color: #fff;
   }
 
-}
+
 
 .line_separator {
-  border: $border;
+  border: 2px solid #CDCDCD;
 }
 
 .banner {
-  border-bottom: $border;
+  border-bottom: 2px solid #CDCDCD;
+}
 
-  &__image {
+  .banner__image {
     min-height: 50%;
     margin-right: 180px;
     margin-top: 50px;
     width: inherit;
   }
 
-  &__text-block {
-    li {
+  
+    .banner__text-block li {
       border: 0;
     }
 
-    li:first-child {
+    .banner__text-block li:first-child {
       font-size: 16px;
       line-height: 20px;
       color: #E9399C;
       letter-spacing: -0.416667px;
     }
 
-    li:nth-child(2) {
+    .banner__text-block li:nth-child(2) {
       font-family: Museo Cyrl;
       font-style: normal;
       font-weight: bold;
       font-size: 34px;
       line-height: 128%;
       letter-spacing: -0.416667px;
-      color: $background_color;
+      color: #315AF2;
     }
-  }
+  
 
-  &__button {
+  .banner__button {
     font-family: Museo Cyrl;
     font-weight: bold;
     font-size: 22px;
     line-height: 28px;
     letter-spacing: -0.416667px;
-    background-color: $background_color;
-    color: $block_text;
+    background-color: #315AF2;
+    color: #fff;
   }
 
-  &__button:hover {
-    color: $block_text;
+  .banner__button:hover {
+    color: #fff;
   }
 
-}
 
 .article {
   font-size: 17px;
@@ -115,8 +112,7 @@ h1 {
   color: #404040;
 }
 
-.article-add {
-  input[type="submit"] {
+  .article-add input[type="submit"] {
     width: 159px;
     height: 40px;
     background: #E9399C;
@@ -128,7 +124,7 @@ h1 {
     border: 0;
   }
 
-  input[name="title"] {
+  .article-add input[name="title"] {
     height: 40px;
     width: inherit;
     padding: 10px;
@@ -137,27 +133,27 @@ h1 {
     border-radius: 3px;
   }
 
-  input[name="image"]{
+  .article-add input[name="image"]{
     width: inherit;
     display: none;
   }
-  input[type='file'] {
+  .article-add input[type='file'] {
     opacity:1;
   }
-  label[for="image"]{
+  .article-add label[for="image"]{
     font-size: 20px;
     line-height: 31px;
     text-align: center;
-    color: $background_color;
+    color: #315AF2;
   }
-  &__load-image{
-    border: $border;
+  .article-add__load-image{
+    border: 2px solid #CDCDCD;
     width: inherit;
     padding: 15px;
   }
   #button{
     width: 155px;
-    background: $background_color;
+    background: #315AF2;
     border-radius: 3px;
     font-family: Museo Cyrl;
     font-style: normal;
@@ -165,28 +161,26 @@ h1 {
     font-size: 18px;
     line-height: 22px;
     padding: 8px;
-    color: $block_text;
+    color: #fff;
     border: 0;
   }
-}
 
-.article-list {
-  h5{
+  .article-list h5{
     font-size: 1.3rem;
     text-align: center;
     letter-spacing: -0.416667px;
-    color: $background_color;
+    color: #315AF2;
   }
 
-  img{
+  .article-list img{
     background-size: cover;
   }
 
-  a:hover{
+  .article-list a:hover{
     text-decoration: none;
   }
 
-}
+
 
 .django-ckeditor-widget {
   width: inherit;
