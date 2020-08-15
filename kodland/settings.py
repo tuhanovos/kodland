@@ -122,14 +122,6 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-scss_cmd = '{python} -mscss -A "{image_output_path}" -a "{static_url}" ' \
-    '-S "{static_root}" -o "{{outfile}}" "{{infile}}"'.format(
-        python=sys.executable,
-        image_output_path=COMPRESS_ROOT,
-        static_url=STATIC_URL,
-        static_root=os.path.join(BASE_DIR),
-    )
-
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
